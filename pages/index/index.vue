@@ -2,7 +2,7 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<text class="title">{{title}}</text>
+			<text class="title">我们今天来写必要商城</text>
 		</view>
 	</view>
 </template>
