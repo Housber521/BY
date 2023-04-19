@@ -5,18 +5,23 @@
 			"style": {
 				"navigationBarTitleText": "必要商城"
 			}
+		}, {
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	    ,{
-            "path" : "pages/classify/classify",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/mine/mine",
+            "path" : "pages/detail/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -28,14 +33,14 @@
 	"tabBar": {
 		"color": "#808080",
 		"selectedColor": "#7f4395",
-		"list": [
-			{
+		"borderStyle": "black",
+		"list": [{
 				"pagePath": "pages/index/index",
 				"iconPath": "./static/shouye.png",
 				"selectedIconPath": "static/shouye1.png",
 				"text": "首页"
 			},
-				
+
 			{
 				"pagePath": "pages/classify/classify",
 				"iconPath": "static/fenlei1.png",
@@ -54,7 +59,12 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom",
+		"app-plus": {
+			"titleView": false
+		}
+
 	},
 	"uniIdRouter": {}
 }
