@@ -8,39 +8,47 @@
 				"onReachBottomDistance": 255 //距离底部多远时触发 单位是px
 				// "enablePullDownRefresh": true //下拉刷新
 			}
-		}, {
+		},
+		{
 			"path": "pages/classify/classify",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		}, {
+		},
+		{
 			"path": "pages/mine/mine",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		}, {
+		},
+		{
 			"path": "pages/search/search",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"tabBar": {
 		"color": "#808080",
 		"selectedColor": "#7f4395",
-		"list": [{
+		"borderStyle": "black",
+		"list": [
+			{
 				"pagePath": "pages/index/index",
 				"iconPath": "./static/shouye.png",
 				"selectedIconPath": "static/shouye1.png",
 				"text": "首页"
 			},
-
 			{
 				"pagePath": "pages/classify/classify",
 				"iconPath": "static/fenlei1.png",
@@ -61,9 +69,12 @@
 		"app-plus": {
 			"titleView": false
 		},
-
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom",
+		"app-plus": {
+			"titleView": false
+		}
 	},
 	"uniIdRouter": {}
 }

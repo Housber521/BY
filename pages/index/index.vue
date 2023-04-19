@@ -72,7 +72,7 @@
 	import shop from "../../components/shop/shop"
 	import {
 		getHome
-	} from '../../api/api/api.js'
+	} from '../../api/api.js'
 	import {
 		ref
 	} from "vue"
