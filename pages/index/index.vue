@@ -3,7 +3,7 @@
 		<scroll-view class="box">
 			<view class="home-top">
 				<view class="search-input-container">
-					<view class="search-input">
+					<view class="search-input" @click="goSearch">
 						<view class="byicon-search-2">
 						</view>
 						<view class="searchIcon">请输入您想要的商品</view>
@@ -55,8 +55,10 @@
 				<ul class="ul">
 					<li class="li" v-for="(item) in operational">
 						<image :src="item.iconWebp" class="home-operational-icon" />
-						<p class="p">{{item.title}}</p> <img v-if="item.superscriptUrl" :src="item.superscriptUrl" class="home-operational-point" />
-						<b v-if="item.redPointNumber" class="sign-superscript-number ico-num-2">{{item.redPointNumber}}</b>
+						<p class="p">{{item.title}}</p> <img v-if="item.superscriptUrl" :src="item.superscriptUrl"
+							class="home-operational-point" />
+						<b v-if="item.redPointNumber"
+							class="sign-superscript-number ico-num-2">{{item.redPointNumber}}</b>
 					</li>
 				</ul>
 			</div>
@@ -97,6 +99,12 @@
 	// title 点击
 	let titleCl = (id) => {
 		categoryId.value = id
+	}
+
+	let goSearch = () => {
+		uni.navigateTo({
+			url:"/pages/search/search"
+		})
 	}
 
 	let x = async () => {
