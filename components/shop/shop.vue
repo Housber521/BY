@@ -1,9 +1,9 @@
 <template>
 
-	<view class="doubleRowList" v-for="(item,ind) in goodList"  :key="ind">
+	<view class="doubleRowList" v-for="(item,ind) in goodList" :key="ind">
 		<!-- shop -->
 		<view class="module-list" v-for="value in item.data" :key="value.routerParams.suId">
-			<view class="recommendLinkJump">
+			<view @click="goDetail(value)" class="recommendLinkJump">
 				<image :src="value.imageOrigin ? value.imageOrigin : ''" class="new-item-img" />
 				<dl id="shop-show">
 					<dt class="price"><span class="spansb">￥</span> <span class="spans">108</span> <!----></dt>
@@ -34,6 +34,7 @@
 		watchEffect
 	}
 	from "vue"
+	
 
 	const props = defineProps({
 		area: Array,
@@ -41,11 +42,20 @@
 
 
 	const goodList = ref([])
-	
-	
-	watchEffect(()=>{
+
+
+	watchEffect(() => {
 		goodList.value = props.area
 	})
+
+	// 跳转详情
+	let goDetail = (Suid) => {
+		console.log(Suid.routerParams.suId);
+		uni.navigateTo({
+			url: '/pages/detail/detail?Suid=' + Suid.routerParams.suId
+		})
+
+	}
 </script>
 
 <style scoped>

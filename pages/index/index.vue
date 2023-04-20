@@ -101,16 +101,16 @@
 
 	let x = async () => {
 		let a = (await getHome())
-		console.log(a);
+		// console.log(a);
 		banners.value = a.data.homeData.banners
 		goodList.value = a.data.floorData.blockList[1].block
 		titleAll.value = a.data.homeData.oneLevelCategoryList
 		operational.value = a.data.homeData.operationNavigation
-
-		console.log(operational.value);
+		// console.log(operational.value);
 	};
-
 	x()
+	
+	
 </script>
 
 <style scoped lang="scss">

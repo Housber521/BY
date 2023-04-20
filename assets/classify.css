@@ -3,6 +3,7 @@
 	background: #fff;
 	padding-top: 20rpx;
 	padding-bottom: 12rpx;
+	position: fixed;
 }
 
 .search-input {
@@ -298,6 +299,7 @@
 	line-height: 26rpx;
 	text-align: center;
 }
+
 /* .content_ul{
 	ovfl
 } */

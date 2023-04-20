@@ -428,12 +428,32 @@ body {
 }
 
 
+
 .leader-img {
 	width: 78rpx;
 	height: 78rpx;
 	margin-right: 20rpx;
 	display: block;
 	border-radius: 39rpx;
+}
+
+.flex-center .div {
+	width: 300rpx;
+}
+
+.leader-name {
+	font-size: 24rpx;
+	color: #333;
+	line-height: 33rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 300rpx;
+	height: 33rpx;
+}
+
+.rsd-num {
+	color: #f7a701;
 }
 
 .group-residue {
@@ -1073,4 +1093,46 @@ body {
 	word-wrap: break-word;
 	line-height: 30rpx;
 	overflow: hidden;
+}
+
+.txq_container {
+	background: #eee;
+}
+
+.txq_details {
+	padding: 0 20rpx;
+	line-height: 1.5;
+	font-size: 28rpx;
+	overflow: hidden;
+	background: #fff;
+}
+
+rich-text img {
+	width: 100%;
+}
+
+.index-foot-xyword {
+	width: 710rpx;
+	margin: auto;
+	border-top: #e4e4e4 solid 1.5rpx;
+	height: 250rpx;
+}
+
+.index-foot-xyword .xy-link-wrap {
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: center;
+	color: gray;
+	font-size: 24rpx;
+}
+
+.index-foot-xyword .xy-link-wrap text {
+	color: gray;
+}
+
+.index-foot-xyword .word-wrap {
+	font-size: 20rpx;
+	text-align: center;
+	line-height: 30rpx;
+	color: #868686;
 }
