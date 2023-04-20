@@ -15,3 +15,25 @@ export function getHome() {
 		url: beseUrl + "/home",
 	})
 }
+
+// 搜索热词
+export function getSearchRc(parmas) {
+	return axios({
+		url: beseUrl + "/search",
+		data:{
+			...parmas
+		}
+	})
+}
+
+// 搜索热词点击
+
+// http://192.168.212.95:5056/searchShop?word=口红
+export function getGoShop(parmas) {
+	return axios({
+		url: beseUrl + "/searchShop",
+		data:{
+			...parmas
+		}
+	})
+}
